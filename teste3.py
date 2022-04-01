@@ -1,7 +1,36 @@
 from doctest import master
 from tkinter import *
 
+from setuptools import Command
+
 #Blibiotecas
+
+#=======================================================
+#
+#                     Funções inicio
+#
+#=======================================================
+
+def Multiplicar(): #testar
+    print("Multiplicar Funcionando")
+
+def Somar(): #testar
+    print("Somar Funcionando")
+
+def Subtrair(): #testar
+    print("Subtrair Funcionando")
+
+def FInvertida(): #testar
+    print("Invertida Funcionando")
+
+def AcharX(): #testar
+    print("AcharX Funcionando")
+
+#=======================================================
+#
+#                    Tkinter inicio
+#
+#=======================================================
 
 janela = Tk()
 janela.title("Matrizes")
