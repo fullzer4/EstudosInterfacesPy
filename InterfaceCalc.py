@@ -1,8 +1,6 @@
 from doctest import master
 from tkinter import *
 
-from setuptools import Command
-
 #Blibiotecas
 
 #=======================================================
@@ -11,19 +9,19 @@ from setuptools import Command
 #
 #=======================================================
 
-def Multiplicar(): #testar
+def FMultiplicar(): #testar
     print("Multiplicar Funcionando")
 
-def Somar(): #testar
+def FSomar(): #testar
     print("Somar Funcionando")
 
-def Subtrair(): #testar
+def FSubtrair(): #testar
     print("Subtrair Funcionando")
 
 def FInvertida(): #testar
     print("Invertida Funcionando")
 
-def AcharX(): #testar
+def FAcharX(): #testar
     print("AcharX Funcionando")
 
 #=======================================================
@@ -39,32 +37,35 @@ janela.geometry("600x500+400+100")
 
 widget1 = Frame(master)
 widget1.pack()
+widget1.grid(ipadx= 110, ipady= 10)
 #Divisaobotoes
 
-Multiplicar = Button(widget1, text="Multiplicar")
+Multiplicar = Button(widget1, text="Multiplicar", command=FMultiplicar)
 Multiplicar["font"] = ("Verdana", "10", "italic", "bold")
-Multiplicar.pack ()
+Multiplicar.pack (side=LEFT, expand=YES)
+
 #Multiplicar
 
-Somar = Button(widget1, text="Somar")
+Somar = Button(widget1, text="Somar", command=FSomar)
 Somar["font"] = ("Verdana", "10", "italic", "bold")
-Somar.pack ()
+Somar.pack (side=LEFT, expand=YES)
 #Somar
 
-Subtrair = Button(widget1, text="Subtrair")
+Subtrair = Button(widget1, text="Subtrair", command=FSubtrair)
 Subtrair["font"] = ("Verdana", "10", "italic", "bold")
-Subtrair.pack ()
+Subtrair.pack (side=LEFT, expand=YES)
 #Subtrair
 
-Invertida = Button(widget1, text="Invertida")
+Invertida = Button(widget1, text="Invertida", command=FInvertida)
 Invertida["font"] = ("Verdana", "10", "italic", "bold")
-Invertida.pack ()
+Invertida.pack (side=LEFT, expand=YES)
 #Invertida
 
-AcharX = Button(widget1, text="AcharX")
+AcharX = Button(widget1, text="AcharX", command=FAcharX)
 AcharX["font"] = ("Verdana", "10", "italic", "bold")
-AcharX.pack ()
+AcharX.pack (side=LEFT, expand=YES)
 #AcharX
 
 janela.mainloop()
 #Inciar
+
