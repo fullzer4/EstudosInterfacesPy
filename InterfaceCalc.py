@@ -8,19 +8,19 @@ from tkinter import *
 #
 #=======================================================
 
-def FMultiplicar(): #testar
+def FMultiplicar():
     print("Multiplicar Funcionando")
 
-def FSomar(): #testar
+def FSomar():
     print("Somar Funcionando")
 
-def FSubtrair(): #testar
+def FSubtrair():
     print("Subtrair Funcionando")
 
-def FInvertida(): #testar
+def FInvertida():
     print("Invertida Funcionando")
 
-def FAcharX(): #testar
+def FAcharX():
     print("AcharX Funcionando")
 
 #=======================================================
