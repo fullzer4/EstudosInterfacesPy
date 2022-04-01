@@ -35,9 +35,11 @@ janela.title("Matrizes")
 janela.geometry("600x500+400+100")
 #Janelas
 
-widget1 = Frame(master)
-widget1.pack()
-widget1.grid(ipadx= 110, ipady= 10)
+widget1 = Frame(janela)
+widget1.grid(ipadx= 110)
+
+widget2 = Frame(janela)
+widget1.grid(ipady= 10)
 #Divisaobotoes
 
 Multiplicar = Button(widget1, text="Multiplicar", command=FMultiplicar)
@@ -66,6 +68,32 @@ AcharX["font"] = ("Verdana", "10", "italic", "bold")
 AcharX.pack (side=LEFT, expand=YES)
 #AcharX
 
-janela.mainloop()
-#Inciar
+
+def getinputx(): #fazer funcionar inicio
+    MX=inputx.get("1.0","end")
+    print(MX)
+
+def getinputy(): #fazer funcionar inicio
+    MY=inputy.get("1.0","end")
+    print(MY)
+
+inputx=Text(widget1, height=1, width=4)
+inputx.pack()
+
+btnReadx=Button(widget1, height=1, width=10, text="Confimar X", command=getinputx)
+btnReadx.pack()
+
+inputy=Text(widget1, height=1, width=4)
+inputy.pack()
+
+btnReady=Button(widget1, height=1, width=10, text="Confimar Y", command=getinputy)
+btnReady.pack()
+
+mainloop()
+MX=inputx.get("1.0", "end")
+MY=inputy.get("1.0","end")
+
+widget1.pack()
+widget2.pack()
+
 
