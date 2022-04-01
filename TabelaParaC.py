@@ -19,7 +19,7 @@ inputx.pack(side=LEFT, expand=YES)
 btnReadx=Button(widget1, height=1, width=10, text="Tipo Matriz X", command=getinputx)
 btnReadx.pack(side=LEFT, expand=YES)
 
-class Table: 
+class Resultado: 
       
     def __init__(self,root): 
         

@@ -4,7 +4,7 @@ from tkinter import *
 
 #=======================================================
 #
-#                     Funções inicio
+#                   Funções Front
 #
 #=======================================================
 
@@ -92,6 +92,19 @@ inputy.pack(side=LEFT, expand=YES)
 btnReady=Button(widget2, height=1, width=10, text="Tipo Matriz Y", command=getinputy)
 btnReady.pack(side=LEFT, expand=YES)
 
+#=======================================================
+#
+#                      Backend
+#
+#=======================================================
+
+
+
+#=======================================================
+#
+#                   Iniciar Pagina
+#
+#=======================================================
 mainloop()
 MX=inputx.get("1.0", "end")
 MY=inputy.get("1.0","end")
