@@ -1,4 +1,3 @@
-from doctest import master
 from tkinter import *
 
 #Blibiotecas
@@ -33,13 +32,17 @@ def FAcharX(): #testar
 janela = Tk()
 janela.title("Matrizes")
 janela.geometry("600x500+400+100")
-#Janelas
+janela.configure(bg='red') #Para teste
+#Janela
 
 widget1 = Frame(janela)
 widget1.grid(ipadx= 110)
 
 widget2 = Frame(janela)
-widget1.grid(ipady= 10)
+widget2.grid(ipadx= 10, ipady= 10)
+
+widget3 = Frame(janela)
+widget3.grid(ipady= 10)
 #Divisaobotoes
 
 Multiplicar = Button(widget1, text="Multiplicar", command=FMultiplicar)
@@ -77,17 +80,17 @@ def getinputy(): #fazer funcionar inicio
     MY=inputy.get("1.0","end")
     print(MY)
 
-inputx=Text(widget1, height=1, width=4)
-inputx.pack()
+inputx=Text(widget2, height=1, width=5)
+inputx.pack(side=LEFT, expand=YES)
 
-btnReadx=Button(widget1, height=1, width=10, text="Confimar X", command=getinputx)
-btnReadx.pack()
+btnReadx=Button(widget2, height=1, width=10, text="Tipo Matriz X", command=getinputx)
+btnReadx.pack(side=LEFT, expand=YES)
 
-inputy=Text(widget1, height=1, width=4)
-inputy.pack()
+inputy=Text(widget2, height=1, width=5)
+inputy.pack(side=LEFT, expand=YES)
 
-btnReady=Button(widget1, height=1, width=10, text="Confimar Y", command=getinputy)
-btnReady.pack()
+btnReady=Button(widget2, height=1, width=10, text="Tipo Matriz Y", command=getinputy)
+btnReady.pack(side=LEFT, expand=YES)
 
 mainloop()
 MX=inputx.get("1.0", "end")
@@ -95,5 +98,7 @@ MY=inputy.get("1.0","end")
 
 widget1.pack()
 widget2.pack()
+widget3.pack()
+
 
 

@@ -1,5 +1,24 @@
 from tkinter import *
-  
+
+janela = Tk()
+janela.title("Matrizes")
+janela.geometry("600x500+400+100")
+janela.configure(bg='red') #Para teste
+#Janela
+
+widget1 = Frame(janela)
+widget1.grid(ipadx= 110)
+
+def getinputx(): #fazer funcionar inicio
+    MY=inputx.get("1.0","end")
+    print(MY)
+
+inputx=Text(widget1, height=1, width=5)
+inputx.pack(side=LEFT, expand=YES)
+
+btnReadx=Button(widget1, height=1, width=10, text="Tipo Matriz X", command=getinputx)
+btnReadx.pack(side=LEFT, expand=YES)
+
 class Table: 
       
     def __init__(self,root): 
@@ -19,6 +38,6 @@ lst = [("",'Coluna1','Coluna2',"Coluna3"),
 TotalL = len(lst) 
 TotalC = len(lst[0]) 
    
-root = Tk() 
-t = Table(root) 
-root.mainloop() 
+root = Tk() # iniciar tabela
+janela.mainloop() 
+widget1.pack()
